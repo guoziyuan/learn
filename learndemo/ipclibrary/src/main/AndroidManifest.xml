@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ipclibrary">
+
+    <application>
+        <service
+            android:process=":remote"
+            android:name=".service.RemoteService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.ipclibrary.service"/>
+            </intent-filter>
+        </service>
+
+        <activity android:name=".client.ClientActivity" />
+    </application>
+
+</manifest>
