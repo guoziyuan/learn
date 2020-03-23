@@ -18,4 +18,15 @@
         android:layout_height="wrap_content"
         android:text="get"/>
 
+    <View
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#333"/>
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="send"/>
+
 </LinearLayout>

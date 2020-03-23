@@ -4,12 +4,21 @@
 
     <application>
         <service
-            android:process=":remote"
-            android:name=".service.RemoteService"
+            android:process=":remote2"
+            android:name=".service.MessengerService"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.example.ipclibrary.service"/>
+                <action android:name="com.example.ipclibrary.messengerservice"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.RemoteService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.example.ipclibrary.service" />
             </intent-filter>
         </service>
 
